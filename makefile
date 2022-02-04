@@ -23,3 +23,7 @@ logs:
 .PHONY: app
 app:
 	$(dc) exec web /bin/sh
+
+.PHONY: test
+test:
+	$(dc) exec tests npm test
